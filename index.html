@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>hoverable</title>
+    <style>
+      .container {
+        width: 96%;
+        margin: 12px auto;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+      }
+      .images {
+        transition: 0.4s;
+        margin: 0 auto;
+        width: 32%;
+        height: 330px;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: url(../images/IMG_20250228_173102_619.jpg) no-repeat
+          center/cover;
+      }
+      .images p {
+        opacity: 0;
+        transform: scale(0);
+        transition: 0.8s;
+        font-size: 2rem;
+        color: #fff;
+      }
+      .images:hover {
+        box-shadow: 0 0 0 200px rgba(2, 1, 0, 0.904) inset;
+        cursor: pointer;
+      }
+      .images:hover p {
+        transform: scale(1);
+        opacity: 1;
+      }
+      @media (min-width: 630px) and (max-width: 1100px) {
+        .images {
+          width: 48%;
+        }
+      }
+      @media (max-width: 630px) {
+        .images {
+          width: 96%;
+        }
+      }
+      h1 {
+        text-align: center;
+      }
+      .im1 {
+        background: url(../images/IMG_20250228_172846_958.jpg) no-repeat
+          center/cover;
+        box-shadow: 0 0 0 200px rgba(0, 0, 0, 0.7) inset;
+      }
+      .im2 {
+        background: url(../images/IMG_20250228_172851_802.jpg) no-repeat
+          center/cover;
+      }
+      .im3 {
+        background: url(../images/IMG_20250228_172856_037.jpg) no-repeat
+          center/cover;
+      }
+      .im4 {
+        background: url(../images/IMG_20250228_172849_642.jpg) no-repeat
+          center/cover;
+      }
+      .im5 {
+        background: url(../images/IMG_20250228_172854_633.jpg) no-repeat
+          center/cover;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>hoverable responsive gallery</h1>
+    <div class="container">
+      <div class="images">
+        <p>learn more</p>
+      </div>
+      <div class="images im1">
+        <h2 style="color: #fff">welcome home</h2>
+      </div>
+      <div class="images im2">
+        <p>learn more</p>
+      </div>
+      <div class="images im3">
+        <p>learn more</p>
+      </div>
+      <div class="images im4">
+        <p>learn more</p>
+      </div>
+      <div class="images im5">
+        <p>learn more</p>
+      </div>
+      <div class="images">
+        <p>learn more</p>
+      </div>
+      <div class="images im1">
+        <p>learn more</p>
+      </div>
+      <div class="images im2">
+        <p>learn more</p>
+      </div>
+      <div class="images im3">
+        <p>learn more</p>
+      </div>
+      <div class="images im4">
+        <p>learn more</p>
+      </div>
+      <div class="images im5">
+        <p>learn more</p>
+      </div>
+    </div>
+  </body>
+</html>
